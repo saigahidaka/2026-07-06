@@ -1,132 +1,133 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>歴史を刻めのメニュー</title>
-        <meta name="description" content="コンセプト">
-        <meta name="viewport" content="width=device-width">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="js/script.js"></script>
-        <link href="css/common.css" rel="stylesheet">
-        <link href="css/menu.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">    
-    </head>
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <title>歴史を刻めのメニュー</title>
+    <meta name="description" content="コンセプト">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+</head>
 
-        <header class="header">
-            <div class="header-inner">
-                <a class="header-logo" href="index.html">
-                    <img src="images/common/logo.png" alt="ロゴ">
-                </a>
-                <button class="toggle-menu-button"></button>
-                <div class="header-site-menu">
-                    <nav class="site-menu">
-                        <ul>
-                            <li><a href="menu.html">メニュー</a></li>
-                            <li><a href="members.html">レビュー</a></li>
-                            <li><a href="access.html">アクセス</a></li>
-                        </ul>
-                    </nav>
+<body>
+
+    <header class="header">
+        <div class="header-inner">
+            <a class="header-logo" href="index.html">
+                <img src="images/common/logo.png" alt="ロゴ">
+            </a>
+            <button class="toggle-menu-button"></button>
+            <div class="header-site-menu">
+                <nav class="site-menu">
+                    <ul>
+                        <li><a href="menu.html">メニュー</a></li>
+                        <li><a href="review.html">レビュー</a></li>
+                        <li><a href="access.html">アクセス</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <main class="main menu-main">
+            <img src="images/menu/ra-men.jpg" alt="ラーメン" class="ra-men">
+
+            <div class="intro-box">
+                <p class="center-text">
+                    「歴史を刻め」は、ボリューム満点の二郎系ラーメンが楽しめる人気ラーメン店です。<br>
+                    極太麺と濃厚な豚骨醤油スープ、厚切りのチャーシューが特徴で、食べ応え抜群の一杯を味わえます。
+                </p>
+                <p class="center-text">
+                    麺の量や野菜、ニンニク、背脂などを好みに合わせて調整できるため、自分だけの一杯を楽しめるのも魅力です。<br>
+                    力強い味わいと圧倒的なボリュームで、多くのラーメンファンから支持を集めています。
+                </p>
+                <p class="center-text">
+                    ガッツリ食べたい方や、二郎系ラーメンを満喫したい方におすすめのお店です。
+                </p>
+            </div>
+
+            <img src="images/menu/call.png" alt="コール表" class="ra-men">
+
+            <h2 class="section-title">🗣️ コール（無料トッピング）の頼み方</h2>
+
+            <p class="guide-text">
+                ラーメン提供の直前に、スタッフから「ニンニク入れますか？」と聞かれます。これがコールの合図です！<br>
+                自分好みの最強の一杯を作り上げるための注文方法をマスターしましょう！
+            </p>
+
+            <h3 class="sub-title">🔰 まずは基本ルール！</h3>
+
+            <div class="rule-box">
+                <p>
+                    「ニンニク」以外は、元から入っています。<br><br>
+                    ヤサイ・アブラ・カラメの量が「普通」でいい場合は、コールしなくて大丈夫です。
+                </p>
+            </div>
+
+            <div class="list-wrapper">
+                <div class="list-box">
+                    <h3 class="sub-title" style="margin-top: 0;">🍜 選べる4つのトッピング</h3>
+                    <p>以下の4種類から、増減をお好みで調整できます。</p>
+                    <ul>
+                        <li>ニンニク （※別皿提供はやっていません）</li>
+                        <li>ヤサイ</li>
+                        <li>アブラ （※マシ・マシマシは別皿で提供します）</li>
+                        <li>カラメ （味の濃さ）</li>
+                    </ul>
+                </div>
+
+                <div class="list-box">
+                    <h3 class="sub-title" style="margin-top: 0;">📏 量の指定方法</h3>
+                    <p>それぞれのトッピングに対して、以下の段階で量を指定します。</p>
+                    <ul>
+                        <li>抜き（なし）</li>
+                        <li>少なめ</li>
+                        <li>普通（※ニンニクを入れる場合は「アリ」）</li>
+                        <li>マシ（多め / ※アブラの場合は別皿半分）</li>
+                        <li>マシマシ（さらに多め！ / ※アブラの場合は別皿パンパン）</li>
+                    </ul>
                 </div>
             </div>
-        </header>
-<main class="main">
-    <main class="main menu-main">
-    <img src="images/menu/ra-men.jpg" alt="ラーメン" class="ra-men">
 
-    <div class="intro-box">
-        <p class="center-text">
-            「歴史を刻め」は、ボリューム満点の二郎系ラーメンが楽しめる人気ラーメン店です。<br>
-            極太麺と濃厚な豚骨醤油スープ、厚切りのチャーシューが特徴で、食べ応え抜群の一杯を味わえます。
-        </p>
-        <p class="center-text">
-            麺の量や野菜、ニンニク、背脂などを好みに合わせて調整できるため、自分だけの一杯を楽しめるのも魅力です。<br>
-            力強い味わいと圧倒的なボリュームで、多くのラーメンファンから支持を集めています。
-        </p>
-        <p class="center-text">
-            ガッツリ食べたい方や、二郎系ラーメンを満喫したい方におすすめのお店です。
-        </p>
-    </div>
+            <h3 class="sub-title">💬 ドキドキ…そわそわしてる方へ！コール練習ガイド</h3>
 
-    <img src="images/menu/call.png" alt="コール表" class="ra-men">
+            <div class="pattern-card">
+                <p class="question"><strong>パターン①：ニンニクは欲しい！他は普通の量でOK！</strong></p>
+                <p class="answer">👉 『ニンニクアリ！』</p>
+            </div>
 
-    <h2 class="section-title">🗣️ コール（無料トッピング）の頼み方</h2>
+            <div class="pattern-card">
+                <p class="question"><strong>パターン②：ニンニクはいらない！他は増やしたい！</strong></p>
+                <p class="answer">👉 『ニンニク抜き！ヤサイマシ アブラマシマシで！』</p>
+            </div>
 
-    <p class="guide-text">
-        ラーメン提供の直前に、スタッフから「ニンニク入れますか？」と聞かれます。これがコールの合図です！<br>
-        自分好みの最強の一杯を作り上げるための注文方法をマスターしましょう！
-    </p>
+            <div class="pattern-card">
+                <p class="question"><strong>パターン③：今日はガッツリ限界まで食べたい！</strong></p>
+                <p class="answer">👉 『全マシで！』</p>
+            </div>
 
-    <h3 class="sub-title">🔰 まずは基本ルール！</h3>
-
-    <div class="rule-box">
-        <p>
-            「ニンニク」以外は、元から入っています。<br><br>
-            ヤサイ・アブラ・カラメの量が「普通」でいい場合は、コールしなくて大丈夫です。
-        </p>
-    </div>
-
-    <div class="list-wrapper">
-        <div class="list-box">
-            <h3 class="sub-title" style="margin-top: 0;">🍜 選べる4つのトッピング</h3>
-            <p>以下の4種類から、増減をお好みで調整できます。</p>
-            <ul>
-                <li>ニンニク （※別皿提供はやっていません）</li>
-                <li>ヤサイ</li>
-                <li>アブラ （※マシ・マシマシは別皿で提供します）</li>
-                <li>カラメ （味の濃さ）</li>
-            </ul>
-        </div>
-
-        <div class="list-box">
-            <h3 class="sub-title" style="margin-top: 0;">📏 量の指定方法</h3>
-            <p>それぞれのトッピングに対して、以下の段階で量を指定します。</p>
-            <ul>
-                <li>抜き（なし）</li>
-                <li>少なめ</li>
-                <li>普通（※ニンニクを入れる場合は「アリ」）</li>
-                <li>マシ（多め / ※アブラの場合は別皿半分）</li>
-                <li>マシマシ（さらに多め！ / ※アブラの場合は別皿パンパン）</li>
-            </ul>
-        </div>
-    </div>
-
-    <h3 class="sub-title">💬 ドキドキ…そわそわしてる方へ！コール練習ガイド</h3>
-
-    <div class="pattern-card">
-        <p class="question"><strong>パターン①：ニンニクは欲しい！他は普通の量でOK！</strong></p>
-        <p class="answer">👉 『ニンニクアリ！』</p>
-    </div>
-
-    <div class="pattern-card">
-        <p class="question"><strong>パターン②：ニンニクはいらない！他は増やしたい！</strong></p>
-        <p class="answer">👉 『ニンニク抜き！ヤサイマシ アブラマシマシで！』</p>
-    </div>
-
-    <div class="pattern-card">
-        <p class="question"><strong>パターン③：今日はガッツリ限界まで食べたい！</strong></p>
-        <p class="answer">👉 『全マシで！』</p>
-    </div>
-
-    <div class="warning-box">
-        <h3 style="margin-top: 0; color: #721c24;">⚠️ ご注文の際のお願い</h3>
-        <p>
-            必ず「食べ切れる量」でのご注文をお願いします。<br><br>
-            次のお客様の提供が遅れないペースで完食していただけると大変助かります！<br><br>
-            自分の好みを見つけて、元気よく大きな声でコールしましょう！！
-        </p>
-    </div>
-</main>
+            <div class="warning-box">
+                <h3 style="margin-top: 0; color: #721c24;">⚠️ ご注文の際のお願い</h3>
+                <p>
+                    必ず「食べ切れる量」でのご注文をお願いします。<br><br>
+                    次のお客様の提供が遅れないペースで完食していただけると大変助かります！<br><br>
+                    自分の好みを見つけて、元気よく大きな声でコールしましょう！！
+                </p>
+            </div>
+        </main>
 
 
         <footer class="footer">
             <nav class="site-menu">
                 <ul>
                     <li><a href="menu.html">メニュー</a></li>
-                    <li><a href="members.html">レビュー</a></li>
+                    <li><a href="review.html">レビュー</a></li>
                     <li><a href="access.html">アクセス</a></li>
                 </ul>
             </nav>
@@ -135,5 +136,6 @@
             </a>
             <p class="copyright"><small>&copy;歴史を刻め(嘘)</small></p>
         </footer>
-    </body>
+</body>
+
 </html>
