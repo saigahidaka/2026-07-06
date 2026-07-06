@@ -21,3 +21,69 @@
     height: 600px;
     margin-top: 25px;
 }
+
+        body {
+            background-color: #f8f9fa; /* 全体はシンプルなライトグレー */
+            color: #333333;
+            font-family: sans-serif;
+            margin: 0;
+        }
+        .header {
+            background-color: #000000;
+            border-bottom: 4px solid #ffd700; /* ヘッダー下部に黄色のライン */
+        }
+        .site-menu a {
+            color: #ffffff; /* メニューは白でスッキリと */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .site-menu a:hover {
+            color: #ffd700; /* ホバー時に黄色 */
+        }
+        .main {
+            background-color: #ffffff; /* メイン部分は白背景 */
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 40px auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* 軽いシャドウで立体感 */
+            border-radius: 8px;
+            text-align: center;
+        }
+        .title h1 {
+            font-family: 'Cherry Bomb One', sans-serif;
+            color: #000000;
+            font-size: 2.5rem;
+            margin-top: 0;
+            margin-bottom: 30px;
+            display: inline-block;
+            border-bottom: 4px solid #ffd700; /* タイトル下に黄色のアクセント */
+            padding-bottom: 5px;
+        }
+        .map h2 {
+            font-family: 'Cherry Bomb One', sans-serif;
+            color: #333333;
+            font-size: 1.5rem;
+            border-left: 6px solid #ff0000; /* 左側に赤のアクセントライン */
+            padding-left: 12px;
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+        }
+        .map iframe {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .footer {
+            background-color: #000000;
+            border-top: 4px solid #ffd700; /* フッター上部にも黄色のライン */
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .copyright {
+            color: #aaaaaa;
+        }
