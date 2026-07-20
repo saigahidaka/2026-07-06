@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+/* Q&Aページ全体 */
+.qa-main {
+    padding: 48px 0 80px;
+    background-color: #f7f7f7;
+}
+
+/* Q&Aページ上部 */
+.qa-hero {
+    width: min(1100px, calc(100% - 40px));
+    margin: 0 auto 40px;
+    padding: 30px 40px;
+    background-color: #fff1cc;
+    border-bottom: 6px solid #e60012;
+    border-radius: 12px;
+}
+
+.qa-eyebrow {
+    margin: 0 0 4px;
+    color: #e60012;
+    font-family: "Cherry Bomb One", cursive;
+    font-size: 18px;
+    letter-spacing: 0.08em;
+}
+
+.qa-title {
+    margin: 0;
+    color: #222222;
+    font-size: 48px;
+    line-height: 1.25;
+}
+
+.qa-guide {
+    margin: 8px 0 0;
+    color: #555555;
+    font-size: 16px;
+}
+
+/* Q&A一覧 */
+.qa-list {
+    width: min(1100px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+/* 横長のQ&Aカード */
+.qa-card {
+    width: 100%;
+    margin-bottom: 22px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-left: 8px solid #e60012;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* 質問部分 */
+.qa-card h2 {
+    margin: 0;
+    padding: 20px 28px;
+    color: #222222;
+    background-color: #fff4c7;
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+/* 回答部分 */
+.qa-card p {
+    margin: 0;
+    padding: 20px 28px 24px;
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* ページ移動リンク */
+.qa-card a {
+    color: #d00000;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.qa-card a:hover {
+    color: #ff0000;
+}
+
+/* スマートフォン表示 */
+@media (max-width: 600px) {
+    .qa-main {
+        padding: 24px 0 56px;
+    }
+
+    .qa-hero,
+    .qa-list {
+        width: calc(100% - 24px);
+    }
+
+    .qa-hero {
+        margin-bottom: 26px;
+        padding: 24px 20px;
+    }
+
+    .qa-title {
+        font-size: 34px;
+    }
+
+    .qa-card {
+        margin-bottom: 16px;
+        border-left-width: 6px;
+    }
+
+    .qa-card h2 {
+        padding: 17px 18px;
+        font-size: 18px;
+    }
+
+    .qa-card p {
+        padding: 17px 18px 20px;
+        font-size: 15px;
+    }
+}
