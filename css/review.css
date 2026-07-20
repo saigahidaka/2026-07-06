@@ -1,64 +1,188 @@
-.review {
-    background-color: #f8f8f8;
+.review-main {
+    width: 930px;
+    max-width: 90%;
+    margin: 0 auto;
     padding-top: 45px;
-    padding-bottom: 55px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+    line-height: 1.8;
+    color: #333;
 }
 
-.review h2 {
-    font-size: 22pt;
-    font-weight: bold;
+.review-hero {
     text-align: center;
+    margin-bottom: 35px;
 }
 
-.review h2::after {
-    content: '';
-    display: block;
-    width: 36px;
-    height: 3px;
-    background-color: #000000;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+.eyebrow {
+    margin: 0 0 8px;
+    color: #ff0000;
+    font-family: "Cherry Bomb One", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.18em;
+}
+
+.review-hero .section-title {
+    margin-top: 0;
+    text-align: left;
+}
+
+.review-hero .guide-text {
+    margin-bottom: 0;
 }
 
 .review-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.review-card {
+    min-width: 0;
+    padding: 22px;
+    background-color: #fff;
+    border: 2px solid #eee;
+    border-left: 6px solid #ffd700;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-person {
     display: flex;
-    justify-content: space-around;
-    padding-top: 40px;
-    padding-bottom: 10px;
-    padding-left: 60px;
-    padding-right: 60px;
-    overflow: scroll;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+    padding-bottom: 15px;
+    border-bottom: 2px dashed #ccc;
 }
 
-.review-list li {
+.review-person img {
     flex-shrink: 0;
-    width: 400px;
-    margin-left: 75px;
+    width: 78px;
+    height: 78px;
+    object-fit: contain;
+    border: 3px solid #000;
+    border-radius: 50%;
+    background-color: #f8f9fa;
 }
 
-.review-list li:first-child {
-    margin-left: 0;
+.review-person h2 {
+    margin: 0 0 6px;
+    color: #ff0000;
+    font-size: 1.25rem;
 }
 
-@media (max-width: 800px) {
-    .review-list {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .review-list li {
-        width: 220px;
-        margin-left: 30px;
-    }
+.review-tag {
+    display: inline-block;
+    margin: 0;
+    padding: 3px 10px;
+    background-color: #000;
+    color: #ffd700;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
 }
 
-dt {
-    /*Aさんと注文内容の間に空白*/
-    margin-bottom: 8px;
-}
-
-dl {
-    /*注文内容とコメントの間に空白*/
+.order-box {
     margin-bottom: 16px;
+    padding: 14px 16px;
+    background-color: #fff3cd;
+    border: 2px solid #ffeeba;
+    border-radius: 8px;
+    color: #856404;
+}
+
+.order-box strong {
+    display: block;
+}
+
+.order-box p {
+    margin: 4px 0 0;
+    font-weight: bold;
+}
+
+.review-comment {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.9;
+}
+
+.review-note {
+    margin-top: 40px;
+}
+
+.review-note h2 {
+    margin: 0 0 12px;
+    color: #721c24;
+    font-size: 1.2rem;
+}
+
+.review-note a {
+    color: #721c24;
+    font-weight: bold;
+    text-decoration-thickness: 2px;
+}
+
+.review-note a:hover,
+.review-note a:focus-visible {
+    color: #ff0000;
+}
+
+.footer {
+    margin-top: 80px;
+}
+
+@media (max-width: 900px) {
+    .review-list {
+        grid-template-columns: 1fr;
+    }
+
+    .review-card {
+        display: grid;
+        grid-template-columns: 230px 1fr;
+        column-gap: 20px;
+    }
+
+    .review-person {
+        grid-row: 1 / span 2;
+        align-self: start;
+        margin-bottom: 0;
+        border-right: 2px dashed #ccc;
+        border-bottom: 0;
+        padding-right: 20px;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .review-main {
+        max-width: none;
+        width: auto;
+        padding: 30px 16px 20px;
+    }
+
+    .review-hero .section-title {
+        font-size: 1.25rem;
+    }
+
+    .review-card {
+        display: block;
+        padding: 18px;
+    }
+
+    .review-person {
+        margin-bottom: 18px;
+        padding-right: 0;
+        padding-bottom: 15px;
+        border-right: 0;
+        border-bottom: 2px dashed #ccc;
+    }
+
+    .review-person img {
+        width: 68px;
+        height: 68px;
+    }
 }
