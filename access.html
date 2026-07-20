@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
     <title>ラーメン荘 歴史を刻め 八事店へのアクセス</title>
-    <meta name="description" content="アクセス">
-    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="ラーメン荘 歴史を刻め 八事店へのアクセスマップ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
     <link href="css/common.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
     <link href="css/access.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,46 +21,60 @@
 <body>
     <header class="header">
         <div class="header-inner">
-            <a class="header-logo" href="index.html">
-                <img src="images/common/logo.png" alt="ロゴ">
-            </a>
-            <button class="toggle-menu-button"></button>
+            <a class="header-logo" href="index.html"><img src="images/common/logo.png" alt="歴史を刻め 八事店"></a>
+            <button class="toggle-menu-button" aria-label="メニューを開く" aria-expanded="false"></button>
             <div class="header-site-menu">
-                <nav class="site-menu">
+                <nav class="site-menu" aria-label="メインメニュー">
                     <ul>
                         <li><a href="menu.html">メニュー</a></li>
                         <li><a href="review.html">レビュー</a></li>
-                        <li><a href="access.html">アクセス</a></li>
+                        <li><a href="access.html" aria-current="page">アクセス</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    
-    <main class="main">
-        <div class="title">
-            <h1>Access</h1>
-        </div>
-        <div class="map">
-            <h2>アクセスマップ</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1631.4617108326252!2d136.97111780413624!3d35.13358450345351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037b002e83ba6d%3A0x7d4108812e3508bc!2z44Op44O844Oh44Oz6I2YIOattOWPsuOCkuWIu-OCgSDlhavkuovlupc!5e0!3m2!1sja!2sjp!4v1783313488513!5m2!1sja!2sjp"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        </div>
+
+    <main class="main access-main">
+        <section class="access-hero">
+            <p class="eyebrow">ACCESS</p>
+            <h1 class="section-title">📍 店舗へのアクセス</h1>
+            <p class="guide-text">ご来店前に場所とルートをご確認ください。</p>
+        </section>
+
+        <section class="access-grid">
+            <div class="map-card">
+                <h2 class="sub-title">🗺️ アクセスマップ</h2>
+                <div class="map-frame"><iframe title="ラーメン荘 歴史を刻め 八事店の地図"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1631.4617108326252!2d136.97111780413624!3d35.13358450345351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037b002e83ba6d%3A0x7d4108812e3508bc!2z44Op44O844Oh44Oz6I2YIOattOWPsuOCkuWIu-OCgSDlhavkuovlupc!5e0!3m2!1sja!2sjp!4v1783313488513!5m2!1sja!2sjp"
+                        loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+            </div>
+            <div class="access-info">
+                <div class="list-box">
+                    <h2 class="sub-title">🍜 info</h2>
+                    <p>ラーメン荘 歴史を刻め 八事店<br>
+                        (月)～（土）<br>
+                        11:00～14:00<br>
+                        18:00～21:00<br>
+                        日曜定休日
+                    </p>
+                </div>
+                <div class="warning-box">
+                    <h2>⚠️ ご来店前に</h2>
+                    <p>営業時間・定休日・臨時休業などの最新情報をご確認のうえ、ご来店ください。</p>
+                </div>
+            </div>
+        </section>
     </main>
-    
+
     <footer class="footer">
-        <nav class="site-menu">
+        <nav class="site-menu" aria-label="フッターメニュー">
             <ul>
                 <li><a href="menu.html">メニュー</a></li>
                 <li><a href="review.html">レビュー</a></li>
                 <li><a href="access.html">アクセス</a></li>
             </ul>
-        </nav>
-        <a class="footer-logo" href="index.html">
-            <img src="images/common/logo_footer.png" alt="ロゴ">
-        </a>
+        </nav><a class="footer-logo" href="index.html"><img src="images/common/logo_footer.png" alt="歴史を刻め 八事店"></a>
         <p class="copyright"><small>&copy;歴史を刻め(嘘)</small></p>
     </footer>
 </body>

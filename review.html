@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
     <title>ラーメン荘 歴史を刻め 八事店のレビュー</title>
-    <meta name="description" content="レビュー">
-    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="ラーメン荘 歴史を刻め 八事店のお客様レビュー">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
     <link href="css/common.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
     <link href="css/review.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,73 +19,84 @@
 <body>
     <header class="header">
         <div class="header-inner">
-            <a class="header-logo" href="index.html">
-                <img src="images/common/logo.png" alt="ロゴ">
-            </a>
-            <button class="toggle-menu-button"></button>
+            <a class="header-logo" href="index.html"><img src="images/common/logo.png" alt="歴史を刻め 八事店"></a>
+            <button class="toggle-menu-button" aria-label="メニューを開く" aria-expanded="false"></button>
             <div class="header-site-menu">
-                <nav class="site-menu">
+                <nav class="site-menu" aria-label="メインメニュー">
                     <ul>
                         <li><a href="menu.html">メニュー</a></li>
-                        <li><a href="review.html">レビュー</a></li>
+                        <li><a href="review.html" aria-current="page">レビュー</a></li>
                         <li><a href="access.html">アクセス</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <main class="main">
-        <div class="review">
-            <h2>お客様からの声</h2>
-            <ul class="review-list">
-                <li>
-                    <img src="images/members/member_A.png" alt="Aさん">
-                    <dl>
-                        <dt>Aさん</dt>
-                        <dd>注文内容: 麺300g，ニンニク少なめヤサイアブラマシ</dd>
-                    </dl>
-                    <p class="speciality">コメント: スープは塩加減が良く麺や野菜とよく合います。<br>
-                        麺は縮れた太麺で小麦の風味良く、かつ柔らかく美味しいです。<br>
-                        野菜は新鮮で臭みもなく、茹で加減もシャキシャキとした感じが残っており、背脂と絡めて食べたら昇天します。<br>
-                        最大の特徴は厚切りチャーシューにも関わらず柔らかいステーキのような肉です。ほかでは味わうことができないためリピート確定です。<br></p>
-                </li>
-                <li>
-                    <img src="images/members/member_B.png" alt="Bさん">
-                    <dl>
-                        <dt>Bさん</dt>
-                        <dd>注文内容: 麺200g，ニンニク少なめヤサイアブラカラメ</dd>
-                    </dl>
-                    <p class="speciality">コメント: 見た目から中々のボリューム。<br>
-                        スープは醤油ベースにいろいろな味がミックス。<br>
-                        二郎系でもくどさなく、意外とアッサリしてました。<br>
-                        麺は太く、スープになじみ合ううま麺！<br>
-                        豚肉チャーシューは厚みがあり、醤油の味が染み込んでました。<br></p>
-                </li>
-                <li>
-                    <img src="images/members/member_C.png" alt="Cさん">
-                    <dl>
-                        <dt>Cさん</dt>
-                        <dd>注文内容: 汁なし麺150g，ニンニクなしヤサイ少なめアブラ少なめ，チーズ，卵</dd>
-                    </dl>
-                    <p class="speciality">コメント: 味は結構濃いめ。<br>
-                        チーズでまろやかになり後半は溶いた卵にラーメンをつけて味をなめらかに、
-                        次回訪問する際もチーズと卵は欠かさず注文しようと思います。<br>
-                        汁なしはまぜそばみたいな感覚で個人的にまぜそばはすごく好きなのでおいしかったです！</p>
-                </li>
-            </ul>
-        </div>
+
+    <main class="main review-main">
+        <section class="review-hero">
+            <p class="eyebrow">CUSTOMER REVIEWS</p>
+            <h1 class="section-title">🍜 お客様からの声</h1>
+            <p class="guide-text">麺量やコールも一緒に掲載。初めて注文するときの参考にしてください！</p>
+        </section>
+
+        <ul class="review-list">
+            <li class="review-card">
+                <div class="review-person"><img src="images/members/member_A.png" alt="Aさん">
+                    <div>
+                        <h2>Aさん</h2>
+                        <p class="review-tag">ラーメン 300g</p>
+                    </div>
+                </div>
+                <div class="order-box"><strong>🗣️ コール</strong>
+                    <p>ニンニク少なめ・ヤサイマシ・アブラマシ</p>
+                </div>
+                <p class="review-comment">
+                    スープは塩加減が良く、麺や野菜とよく合います。縮れた極太麺は小麦の風味が良く、柔らかな食感。シャキシャキの野菜を背脂と絡めると相性抜群です。厚切りなのに柔らかい、ステーキのような豚も印象的でした。
+                </p>
+            </li>
+            <li class="review-card">
+                <div class="review-person"><img src="images/members/member_B.png" alt="Bさん">
+                    <div>
+                        <h2>Bさん</h2>
+                        <p class="review-tag">ラーメン 200g</p>
+                    </div>
+                </div>
+                <div class="order-box"><strong>🗣️ コール</strong>
+                    <p>ニンニク少なめ・ヤサイマシ・アブラマシ・カラメ</p>
+                </div>
+                <p class="review-comment">
+                    見た目からしっかりボリュームがあります。醤油ベースのスープは、二郎系ながらくどさが少なく意外とあっさり。太麺はスープによくなじみ、厚みのある豚には醤油の味が染み込んでいました。</p>
+            </li>
+            <li class="review-card">
+                <div class="review-person"><img src="images/members/member_C.png" alt="Cさん">
+                    <div>
+                        <h2>Cさん</h2>
+                        <p class="review-tag">汁なし 150g</p>
+                    </div>
+                </div>
+                <div class="order-box"><strong>🗣️ コール・追加</strong>
+                    <p>ニンニク抜き・ヤサイ少なめ・アブラ少なめ／チーズ・卵</p>
+                </div>
+                <p class="review-comment">
+                    味はしっかり濃いめ。チーズでまろやかにし、後半は溶き卵につけて味の変化を楽しめました。まぜそば感覚で食べられる汁なしがおいしく、次もチーズと卵を追加したいです！</p>
+            </li>
+        </ul>
+
+        <aside class="warning-box review-note">
+            <h2>⚠️ 注文選びのヒント</h2>
+            <p>初めての方は無理のない麺量から。無料トッピングの頼み方は<a href="menu.html">メニューページのコールガイド</a>で確認できます。</p>
+        </aside>
     </main>
+
     <footer class="footer">
-        <nav class="site-menu">
+        <nav class="site-menu" aria-label="フッターメニュー">
             <ul>
                 <li><a href="menu.html">メニュー</a></li>
                 <li><a href="review.html">レビュー</a></li>
                 <li><a href="access.html">アクセス</a></li>
             </ul>
-        </nav>
-        <a class="footer-logo" href="index.html">
-            <img src="images/common/logo_footer.png" alt="ロゴ">
-        </a>
+        </nav><a class="footer-logo" href="index.html"><img src="images/common/logo_footer.png" alt="歴史を刻め 八事店"></a>
         <p class="copyright"><small>&copy;歴史を刻め(嘘)</small></p>
     </footer>
 </body>
